@@ -88,8 +88,8 @@ int main(int argc, char * argv[]) {
 			goto nextline;
 		}
 		
-		//this is an impossibly inefficient way to go about it for big data...
-		//having said that, in 21st century ram it's kinda irrelevant
+		//this is a horribly inefficient way to go about it, especially for
+		//big data. Having said that, for this program it's not an issue
 		for (i = 0, a = false; a != true; i++) {
 			stickFile >> bits[i];
 			for (int r = 0; r < bits[i].length() && a != true; r++) {
