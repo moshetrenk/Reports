@@ -222,7 +222,7 @@ public class Sch {
 					}
 				} 
 				else{
-					catastrophicFailure(entry.getKey());
+					failed(entry.getKey());
 				}
 			}
 			g.println("");
@@ -284,7 +284,7 @@ public class Sch {
 		return list;	
 	}
 	
-	static void catastrophicFailure(String str) throws IOException{
+	static void failed(String str) throws IOException{
 		PrintWriter p = new PrintWriter("C:\\Users\\" + new File("C:\\Users").list()[5] + "\\Desktop\\Inputs\\SCHEDULE G FAILED.txt");
 		
 		p.println(str + " cannot be added to the file, it is not listed among valid brands");
